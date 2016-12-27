@@ -13,7 +13,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         try {
-            MailUtils.sendMail(new CrashMail("mail.codyy.cn", "title", "log", "android@codyy.com", "运营平台2.2.0", "android", "lijian@codyy.com", "李健"));
+            MailUtils.sendMail(new CrashMail("SMTPHost", "title", "log", "****@****.com", "发件人名称", "password", "****@****.com", "收件人名称"));
         } catch (Exception e) {
             e.printStackTrace();
         }

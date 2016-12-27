@@ -15,12 +15,12 @@ allprojects {
 **Step 2. Add the dependency**
 ```
 dependencies {
-	        compile 'com.github.CodyyAndroid:LibUtils:v1.0.0'
+	        compile 'com.github.CodyyAndroid:LibCrashEmailUtils:v1.0.0'
 	}
 ```
-**Step 3. init**
+**Step 3. Use**
 ```
-Utils.init(context);
+MailUtils.sendMail(new CrashMail("SMTPHost", "title", "log", "****@****.com", "发件人名称", "password", "****@****.com", "收件人名称"));
 ```
 ## [LICENSE](https://github.com/CodyyAndroid/LibCrashEmailUtils/blob/master/LICENSE)
 ```
